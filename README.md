@@ -1,0 +1,46 @@
+**88 Deobfuscator**
+
+**Supported Obfuscations:**
+- **Base:** base64, base32, base16
+- **Compressions:** zlib, gzip, lzma
+- **Combinations:** base + compression
+- **Alana:** GrandioseeObf, CleverObf, XindexObf
+- **Specific:** RendyObf, BlankObfv2, ChristianObf, ImpostorObf
+- **Auto-mode:** automatic recognition of the obfuscation type and deobfuscate it
+
+
+**Installation & Run:**
+
+    git clone https://github.com/k88-b/88deobfuscator-batch.git
+    cd 88deobfuscator-batch
+    uv sync
+    chmod +x ./deobfuscate
+    ./deobfuscate --help
+
+**Usage examples:**
+
+    # Auto‑detect and deobfuscate
+    ./deobfuscate obfuscated.py
+
+    # Specify a method manually
+    ./deobfuscate -m base64 obfuscated.py
+
+    # Output to a custom file
+    ./deobfuscate -o cleaned.py obfuscated.py
+
+    # List all supported methods
+    ./deobfuscate --list
+
+Deobfuscating ChristianObf requires [pycdc](https://github.com/zrax/pycdc).
+
+**Before/After Example:**
+
+<div align="left">
+  <img src="https://github.com/user-attachments/assets/b29407e1-0928-4725-9d78-48fb79c4c6c8" width="45%" />
+  <img src="https://github.com/user-attachments/assets/16244ebd-35a9-44eb-915f-b8d6c7f26054" width="45%" />
+</div>
+
+
+**Contact:**
+ - If you need help contact me on telegram: [@k88_w](https://t.me/k88_w)
+
